@@ -1,0 +1,6 @@
+secrets.h
+sensors.h
+*.bak
+*.tmp
+.DS_Store
+.vscode/
