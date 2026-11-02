@@ -1,5 +1,9 @@
 # Heltec Wireless Paper Weather Station
 
+<p align="center">
+  <img src="images/weather-station-main.jpg" alt="Completed Heltec Wireless Paper weather station showing the e-paper weather dashboard" width="720">
+</p>
+
 A battery-powered weather station based on the **Heltec Wireless Paper V1.2** ESP32-S3 board and its E0213A367 e-paper display.
 
 The firmware retrieves current weather conditions from [Open-Meteo](https://open-meteo.com/) and reads solar forecasts and temperature values from a local Home Assistant installation.
@@ -24,6 +28,26 @@ The current firmware schedule is configured for 90-minute daytime updates and 2-
 - E0213A367 e-paper display
 - 3.7 V Li-Po battery (the example build used a 500 mAh cell)
 - USB-C programming cable
+
+### 3D-printed enclosure
+
+The weather station is mounted in a custom 3D-printed enclosure designed for this build. The design is available on Thingiverse:
+
+**[View and download the 3D-printed enclosure on Thingiverse](https://www.thingiverse.com/thing:7413846)**
+
+### Project photos
+
+| Completed weather station | Enclosure and USB-C access |
+|---|---|
+| ![Completed weather station](images/weather-station-main.jpg) | ![Enclosure showing USB-C access](images/enclosure-usb-view.jpg) |
+
+| Assembled station – alternate angle | Heltec Wireless Paper V1.2 board |
+|---|---|
+| ![Assembled station from another angle](images/assembled-weather-station-angle.jpg) | ![Wireless Paper V1.2 board](images/wireless-paper-board.jpg) |
+
+| E-paper display module |
+|---|
+| ![Rear of the e-paper display module](images/e-paper-display-module.jpg) |
 
 ### GPIO assignments used by this firmware
 
@@ -108,6 +132,12 @@ The Arduino sketch folder must have the same name as the `.ino` file:
 Heltec-Weather-Station/
 ├── README.md
 ├── .gitignore
+├── images/
+│   ├── weather-station-main.jpg
+│   ├── enclosure-usb-view.jpg
+│   ├── assembled-weather-station-angle.jpg
+│   ├── wireless-paper-board.jpg
+│   └── e-paper-display-module.jpg
 └── Weather_Station_2026/
     ├── Weather_Station_2026.ino
     ├── secrets.example.h
